@@ -70,7 +70,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "撸撸码，踩踩坑，记录记录生活。"
+sidebar-about-description: "撸撸码，记录下撸码中踩的坑，给别人提供点经验。 记录生活中的美好"
 sidebar-avatar: /img/avatar-xhbpiao.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
