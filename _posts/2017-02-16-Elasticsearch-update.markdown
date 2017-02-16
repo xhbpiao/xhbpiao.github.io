@@ -24,6 +24,7 @@ tags:
 2. 由于5.1.2 （官方说5.1.2修复这个问题。经测试5.2 才真正修复）之前的bug 需要强制使用netty3
     1. transport.type: netty3
     2. http.type: netty3
+
 ### 启动部分
 - 系统最低要求java 版本为1.8
 - 默认内存改为2G 
@@ -62,13 +63,29 @@ tags:
     
     **备注:**
     - 由于在ES 5.X POST 和 GET 已经基本没什么区别了(都会解析body中的数据)。导致 elasticsearh-head 的GET 请求会出错（如果有body 数据则传输这部分数据，没有则传{}），所以如果需要GET 请求的话需要在浏览器中其他tag执行
-- XPack 
-    > ES官方出的多方位监控插件，功能很强大!
 
+- XPack 
+    > ES官方出的多方位监控插件，功能很强大![image](http://olgd3m0ha.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-02-16%2014.56.11.png) 安装以后如果只是监控使用而不使用认证的话需要设置参数 xpack.security.enabled: false
+
+    1. 在ES集群中的每个节点安装 x-pack
+        - cd $ES_PATH
+        - bin/elasticsearch-plugin install x-pack
+    2. 在Kibana中安装 x-pack
+        - cd $Kibana_Path
+        - bin/kibana-plugin install x-pack
+    3. 重启ES 集群
+    4. 重启kibana 节点
+    5. 在kibana 中 即可看到monitor界面
+    
+
+### kibana和logstash（只说升级部分，使用下次再聊）
+- kibana 必须和 ES 同步升级（大版本，小版本可以不升级），否则可能导致不可用
+- logstash 不建议 升级 因
 
 ### 错误现象和解决办法
 
 > ![image](http://olgd3m0ha.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170216141221.png)
 > 解决办法 参考配置参数 第2项 
+
 
 
