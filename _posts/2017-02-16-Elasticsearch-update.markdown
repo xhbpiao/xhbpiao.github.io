@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Elasticsearch 2.X 升级到 5.X"
-subtitle:   " \"ES 升级注意事项\""
+title:      "Elasticsearch 2.X 升级到 5.X 注意事项"
+subtitle:   "记录下升级中踩的坑"
 date:       2017-02-16 14:00:00
 author:     "孤鸿梦"
 header-img: "img/post-bg-es-update.png"
@@ -13,8 +13,8 @@ tags:
 ---
 
 # 前言
-> [Elasticsearch](https://www.elastic.co/products/elasticsearch)是一个现在比较流行的实时是搜索引擎，它基于lunceue实现。 主要特点：****分布式的实时文件存储，每个字段都被索引并可被搜索；分布式的实时分析搜索引擎；
-可以扩展到上百台服务器，处理PB级结构化或非结构化数据****
+> [Elasticsearch](https://www.elastic.co/products/elasticsearch)是一个现在比较流行的实时是搜索引擎，它基于lunceue实现。 主要特点：**分布式的实时文件存储，每个字段都被索引并可被搜索；分布式的实时分析搜索引擎；
+可以扩展到上百台服务器，处理PB级结构化或非结构化数据**
 
 
 # 升级变更部分
