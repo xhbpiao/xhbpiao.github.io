@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Elasticsearch 2.X 升级到 5.X"
-subtitle:   "记录下升级中踩的坑"
+subtitle:   "记录下升级中发现的变动"
 date:       2017-02-16 14:00:00
 author:     "孤鸿梦"
 header-img: "img/post-bg-es-update.png"
