@@ -4,7 +4,7 @@ title:      "Elasticsearch 使用分享(上)"
 subtitle:   "记录下ES的使用经验，帮助别人少走弯路"
 date:       2017-03-02 19:00:00
 author:     "孤鸿梦"
-header-img: "img/post-bg-es-update.png"
+header-img: "img/post-es-share-bg.png"
 catalog: true
 tags:
     - 技术
