@@ -91,5 +91,10 @@ tags:
 > ![image](http://olgd3m0ha.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170216141221.png)
 > 解决办法 参考配置参数 第2项 
 
+> [2017-02-28T10:30:12,900][ERROR][o.e.b.Bootstrap          ] [bjac_infra_es1v] node validation exception
+bootstrap checks failed  
+system call filters failed to install; check the logs and fix your configuration or disable system call filters at your own risk  
 
+> 因5.2开启了强制bootstap 检查，而centos 7以下不支持 SecComp，因此会导致检测失败，会停止启动服务  
+解决办法 在配置文件中 添加 bootstrap.system_call_filter: false
 
